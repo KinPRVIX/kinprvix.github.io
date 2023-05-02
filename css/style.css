@@ -103,7 +103,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #0062b9;
+    background: #4D1980;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -155,12 +155,12 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: #0062b9;
+    background: #4D1980;
     color: #fff; }
   .btn--theme-inv {
-    color: #0062b9;
+    color: #4D1980;
     background: #fff;
-    border: 2px solid #0062b9;
+    border: 2px solid #4D1980;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
@@ -293,15 +293,20 @@ textarea {
   .projects__row-img-cont {
     overflow: hidden; }
   .projects__row-img {
-    width: 100%;
+    width: 70%;
+    height: auto;
     display: block;
-    object-fit: cover; }
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; 
+    border-radius: 8px; }
   .projects__row-content {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    position: relative; }
     @media only screen and (max-width: 56.25em) {
       .projects__row-content {
         align-items: center; } }
@@ -515,14 +520,14 @@ textarea {
     color: #333;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #0062b9; }
+      color: #4D1980; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #0062b9; }
+    background: #4D1980; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
@@ -554,7 +559,7 @@ textarea {
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: #0062b9; }
+      color: #4D1980; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -601,7 +606,7 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: #0062b9; }
+      color: #4D1980; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
@@ -693,8 +698,10 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
-.project-image{
+.project-header-image{
   display: block;
+  width: 40vw;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
