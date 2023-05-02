@@ -693,6 +693,12 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
+.project-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @keyframes wheel {
   to {
     opacity: 0;
