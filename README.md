@@ -1,1 +1,0 @@
-# kinprvix.github.io
