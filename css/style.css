@@ -698,12 +698,22 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
+
 .project-header-image{
   display: block;
   width: 40vw;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 56.25em) {
+  .project-header-image{
+    display: block;
+    width: 85vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @keyframes wheel {
