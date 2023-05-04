@@ -133,9 +133,9 @@
                 Mientras decid&iacute;a una soluci&oacute;n para frustrar lo menos posible al jugador, fui dise&ntilde;ando en papel distintos layouts para el laberinto.<br>
                 Durante este proceso, al ver todas las opciones que hab&iacute;a planteado juntas, se me ocurri&oacute; que en lugar de tener un laberinto est&aacute;tico, 
                 dise&ntilde;ar&iacute;a varios m&oacute;dulos para el laberinto y se posicionar&iacute;an de manera aleatoria por la escena variando tambi&eacute;n su rotaci&oacute;n.<br>
-                Para ello ten&iacute;a que tener en cuenta que los m&oacute;dulos deb&iacute;an tener las mismas dimensiones y ofrecer, en caso de que las tuviesen, salidas en los 
-                mismos puntos.<br>
-                A cada m&oacute;dulo, se le a&ntilde;adieron varios puntos en los que podr&iacute;an generarse sus respectivas esferas (s&oacute;lo una por m&oacute;dulo).
+                Para ello ten&iacute;a que tener en cuenta que los m&oacute;dulos deb&iacute;an tener las mismas dimensiones y ofrecer, en caso de que las tuviesen, salidas/entradas 
+                en los mismos puntos.<br>
+                A cada m&oacute;dulo, se le a&ntilde;adieron varias posiciones en las que podr&iacute;an generarse sus respectivas esferas (s&oacute;lo una por m&oacute;dulo).
               </p>
               <p class="project-details__desc-para">
                 <figure>
@@ -146,8 +146,8 @@
                 />
                   <figcaption>
                     M&oacute;dulos que se posicionar&aacute;n en la escena de manera aleatoria y variando su posici&oacute;n.<br>
-                    - Zonas blancas: suelo.<br>
-                    - Zonas negras: vac&iacute;o.<br>
+                    - Zonas blancas: caminable.<br>
+                    - Zonas negras: no caminable.<br>
                     - Puntos: posibles posiciones para las esferas a recolectar.<br>
                   </figcaption>
                 </figure>
@@ -200,7 +200,7 @@
               </p>
 
               <p class="project-details__desc-para">
-                Con el nuevo Input System, implement&eacute; soporte para teclado+rat&oacute; y cualquier mando de consola.<br>
+                Con el nuevo Input System, implement&eacute; soporte para teclado+rat&oacute;n y cualquier mando de consola.<br>
                 De manera adicional, seg&uacute;n el ultimo tipo de control que se utilice, la interfaz de los men&uacute;s cambia para reflejar los nuevos controles.
               </p>
               <p class="project-details__desc-para">
