@@ -126,7 +126,7 @@
                 m&aacute;s a&uacute;n si tenemos en cuenta que el control deb&iacute;a ser en primera persona. Por ello, durante un tiempo estuve recopilando ideas para que el 
                 laberinto fuese lo menos frustrante posible.<br>
                 La primera idea fue diferenciar los pasillos por colores y utilizar como objeto a recolectar esferas del mismo color de los pasillos, de &eacute;sta manera, el 
-                jugador sabr&iacute;a cuales hab&iacute;a recogido ya por qu&eacute; zonas ya estaban completadas. Aun as&iacute;, ser&iacute;a bastante f&aacute;cil perderse, ya 
+                jugador sabr&iacute;a qu&eacute; zonas hab&iacute;a completado ya por dicho color. Aun as&iacute;, ser&iacute;a bastante f&aacute;cil perderse, ya 
                 que los muros impedir&iacute;an al jugador saber si la zona de la esfera recolectada ten&iacute;a en alguno de sus extremos una salida a otra zona sin completar.
               </p>
               <p class="project-details__desc-para">
@@ -166,7 +166,7 @@
               </p>
 
               <p class="project-details__desc-para">
-                Volviendo al principio del dise&ntilde;o: <i>Si el problema son los muros, ¿por qu&eacute; no hacer un laberinto sin ellos?</i><br>
+                Volviendo al principio del dise&ntilde;o: <strong><i>Si el problema son los muros, ¿por qu&eacute; no hacer un laberinto sin ellos?</i></strong><br>
                 Para evitar que el jugador viese el camino hacia los objetos desde cualquier punto del laberinto, decid&iacute; a&ntilde;adir niebla, que ir&iacute;a disminuyendo 
                 poco a poco conforme se recolectaban esferas.
                 Si el jugador ca&iacute;a, se le transportar&iacute;a de nuevo a la &uacute;ltima zona segura en la que estuvo.
@@ -175,8 +175,8 @@
                 Tras desarrollar la idea por completo, se a&ntilde;adi&oacute; una &uacute;ltima esfera que har&iacute;a las veces de interruptor para abrir la puerta y poder escapar 
                 del laberinto.
                 Se implement&oacute; el temporizador y una penalizaci&oacute;n a &eacute;ste cuando el jugador ca&iacute;a al vac&iacute;o.
-                Para redondear un poco m&aacute;s la atm&oacute;sfera del juego, se a&ntilde;adieron part&iacute;culas para simular lluvia, m&uacute;sica de fondo, efectos de sonido, 
-                luces, etc...
+                Para redondear un poco m&aacute;s la atm&oacute;sfera del juego, se a&ntilde;adieron part&iacute;culas para simular lluvia (un sistema de part&iacute;culas que sigue la 
+                posici&oacute;n del jugador), m&uacute;sica de fondo, efectos de sonido, luces, etc...
               </p>
               
               <p class="project-details__desc-para">
@@ -189,7 +189,7 @@
               <h3 class="project-details__content-title">"Remake"</h3>
               <p class="project-details__desc-para">
                 Tras un tiempo, decid&iacute; que el proyecto, a pesar de no ser nada del otro mundo jugablemente, ten&iacute;a margen de mejora en el aspecto gr&aacute;fico y tras 
-                la salida de los nuevos paquetes 'Input System' y 'Localization' para Unity, decid&iacute; rehacerlo haciendo uso de las nuevas herramientas.
+                la salida de los nuevos paquetes 'Input System' y 'Localization' para Unity, decid&iacute; rehacerlo utilizando las nuevas herramientas.
               </p>
               <p class="project-details__desc-para">
                 <img
@@ -200,20 +200,41 @@
               </p>
 
               <p class="project-details__desc-para">
-                Con el nuevo Input System, implement&eacute; soporte para teclado+rat&oacute;n y cualquier mando de consola.<br>
-                De manera adicional, seg&uacute;n el ultimo tipo de control que se utilice, la interfaz de los men&uacute;s cambia para reflejar los nuevos controles.
+                Con el nuevo <strong>Input System</strong>, implement&eacute; soporte para teclado+rat&oacute;n y cualquier mando de consola.<br>
+                De manera adicional, seg&uacute;n el &uacute;ltimo tipo de control que se utilice, la interfaz de los men&uacute;s cambia para reflejar los nuevos controles.
               </p>
               <p class="project-details__desc-para">
-                Con Localization, se tradujeron todos los textos del juego.
+                Con <strong>Localization</strong>, se tradujeron todos los textos del juego.
               </p>
               <p class="project-details__desc-para">
-                Se realizaron shaders para diferentes objetos con Shader Graph.
+                Se realizaron shaders para diferentes objetos con <strong>Shader Graph</strong>.
               </p>
               <p class="project-details__desc-para">
-                Haciendo uso de los Mixers de audio, se diferenciaron 3 canales: general, m&uacute;sica y efectos de sonido.
+                Haciendo uso de los <strong>AudioMixers</strong>, se diferenciaron 3 canales: general, m&uacute;sica y efectos de sonido.
               </p>
               <p class="project-details__desc-para">
-                El escenario fijo y los m&oacute;dulos del laberinto fueron recreados usando ProBuilder+ProGrids.
+                El escenario fijo y los m&oacute;dulos del laberinto fueron recreados usando <strong>ProBuilder</strong> y <strong>ProGrids</strong>.
+              </p>
+              <br>
+              <p class="project-details__desc-para">
+                Se a&ntilde;adieron al men&uacute; principal las <strong>Opciones</strong>, con ajustes para controles, idioma, sonido y gr&aacute;ficos.
+              </p>
+              <br>
+              <p class="project-details__desc-para">
+                Mejoras en el <strong>aspecto gr&aacute;fico</strong>:<br>
+                · Se a&ntilde;ade post-procesado a la imagen para que los elementos importantes resalten a la vista del jugador.<br>
+                · Se recrea el sistema de part&iacute;culas del original y se a&ntilde;ade un sistema adicional para las salpicaduras de &eacute;stas sobre las superficies visibles.<br>
+                · Se ajusta tanto la densidad como el color de la niebla.<br>
+              </p>
+              <br>
+              <p class="project-details__desc-para">
+                En cuestiones de <strong>dise&ntilde;o</strong>:<br>
+                · Se eliminaron los mensajes en pantalla.<br>
+                · Al recoger una esfera, si el jugador se fija en la trayectoria que sigue, acabar&aacute; viendo el haz de luz hacia el cual tiene que dirigirse para finalizar la 
+                partida.<br>
+                · Dado que el haz de luz es el que gu&iacute;a al jugador hacia la salida, se elimina la br&uacute;jula.<br>
+                · El pedestal con la esfera blanca (esfera-interruptor que abre la puerta de salida), se encuenta oculto y s&oacute;lo se har&aacute; visible (cuenta con 
+                una animaci&oacute;n de activaci&oacute;n) al recoger las 7 esferas.<br>
               </p>
 
               <p class="project-details__desc-para">
